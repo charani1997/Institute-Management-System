@@ -2,56 +2,49 @@ package lk.ac.pdn.sci.exampleInstitute.model;
 
 import jakarta.persistence.*;
 
-import java.util.Date;
 @Entity
-@Table(name = "students")
-public class Student {
+@Table(name = "academic_staff")
+public class Academic_staff {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long stu_id;
+    private long staff_id;
     @Column(name = "first_name", nullable = false)
     private String firstName;
     @Column(name = "last_name")
     private String lastName;
-    @Column(name = "dob")
-    private Date dateOfBirth;
-    @Column(name = "admissionDate")
-    private Date admissionDate;
-    @Column(name = "email",unique = true,nullable = false)
-    private String email;
-    @Column(name = "address",nullable = false)
-    private String address;
+    @Column(name = "salary",nullable = false)
+    private double salary;
+    //private String staff_role;
     @Column(unique = true,nullable = false)
     private String username;
     @Column(name = "password",unique = true,nullable = false)
     private String password;
+    @Column(name = "email",unique = true,nullable = false)
+    private String email;
     @Column(name = "mobileNumber")
     private String mobileNumber;
 
-    public Student(){
-
+    public Academic_staff() {
     }
 
-    public Student(long stu_id,String firstName, String lastName, Date dateOfBirth, Date admissionDate, String email, String address, String username, String password, String mobileNumber) {
+    public Academic_staff(long staff_id, String firstName, String lastName, double salary, String username, String password, String email, String mobileNumber) {
         super();
-        this.stu_id = stu_id;
+        this.staff_id = staff_id;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.dateOfBirth = dateOfBirth;
-        this.admissionDate = admissionDate;
-        this.email = email;
-        this.address = address;
+        this.salary = salary;
         this.username = username;
         this.password = password;
+        this.email = email;
         this.mobileNumber = mobileNumber;
     }
 
-    public long getStu_id() {
-        return stu_id;
+    public long getStaff_id() {
+        return staff_id;
     }
 
-    public void setStu_id(long stu_id) {
-        this.stu_id = stu_id;
+    public void setStaff_id(long staff_id) {
+        this.staff_id = staff_id;
     }
 
     public String getFirstName() {
@@ -70,36 +63,12 @@ public class Student {
         this.lastName = lastName;
     }
 
-    public Date getDateOfBirth() {
-        return dateOfBirth;
+    public double getSalary() {
+        return salary;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
-    }
-
-    public Date getAdmissionDate() {
-        return admissionDate;
-    }
-
-    public void setAdmissionDate(Date admissionDate) {
-        this.admissionDate = admissionDate;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
     public String getUsername() {
@@ -118,6 +87,14 @@ public class Student {
         this.password = password;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public String getMobileNumber() {
         return mobileNumber;
     }
@@ -128,17 +105,16 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "stu_id=" + stu_id +
+        return "Academic_staff{" +
+                "staff_id=" + staff_id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", dateOfBirth=" + dateOfBirth +
-                ", admissionDate=" + admissionDate +
-                ", email='" + email + '\'' +
-                ", address='" + address + '\'' +
+                ", salary=" + salary +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
-                ", mobileNumber=" + mobileNumber +
+                ", email='" + email + '\'' +
+                ", mobileNumber='" + mobileNumber + '\'' +
                 '}';
     }
 }
+

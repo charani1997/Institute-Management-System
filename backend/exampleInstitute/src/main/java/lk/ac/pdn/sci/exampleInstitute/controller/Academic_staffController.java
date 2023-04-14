@@ -1,78 +1,54 @@
 package lk.ac.pdn.sci.exampleInstitute.controller;
 
-import lk.ac.pdn.sci.exampleInstitute.dto.LoginDTO;
+import lk.ac.pdn.sci.exampleInstitute.dto.Academic_staffDTO;
 import lk.ac.pdn.sci.exampleInstitute.dto.ResponseDTO;
 import lk.ac.pdn.sci.exampleInstitute.dto.StudentDTO;
-import lk.ac.pdn.sci.exampleInstitute.response.LoginResponse;
+import lk.ac.pdn.sci.exampleInstitute.service.AcademicStaffService;
 import lk.ac.pdn.sci.exampleInstitute.service.StudentService;
 import lk.ac.pdn.sci.exampleInstitute.util.VarList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@CrossOrigin(origins = "http://localhost:3000",methods={RequestMethod.GET,RequestMethod.POST,RequestMethod.PUT,RequestMethod.DELETE})
-@RequestMapping("/api/v1/student")
+@RequestMapping("api/v1/academicStaff")
 //@Controller
-public class StudentController {
+public class Academic_staffController {
     @Autowired
-    private StudentService studentService;
+    private AcademicStaffService academicStaffService;
 
     @Autowired
     private ResponseDTO responseDTO;
     @PostMapping(path = "/save")
-    public String saveStudents(@RequestBody StudentDTO studentDTO){
-        String id = studentService.addStudent(studentDTO);
+    public String saveAcademicStaff(@RequestBody Academic_staffDTO academic_staffDTO){
+        String id = academicStaffService.addStaff(academic_staffDTO);
         return id;
     }
-    @PostMapping(path = "/login")
-    public ResponseEntity<?> loginStudent(@RequestBody LoginDTO loginDTO){
-        LoginResponse loginResponse = studentService.loginStudent(loginDTO);
-        return ResponseEntity.ok(loginResponse);
-    }
+ /*   @Autowired
+    private Academic_staffService academic_staffService;
 
-    @GetMapping(path = "/getAllStudent")
-    public List<StudentDTO> getAllStudent()
-    {
-        List<StudentDTO>allStudents= studentService.getAllStudent();
-        return allStudents;
-    }
-    @GetMapping("/forAdmin")
-    @PreAuthorize("hasRole('ADMIN')")
-    public String forAdmin(){
-        return "for admin";
-    }
-    @GetMapping("/forUser")
-    @PreAuthorize("hasAnyRole('ADMIN','USER')")
-    public String forUser(){
-        return "for user";
-    }
+    @Autowired
+    private ResponseDTO responseDTO;
 
- /*   @PostMapping(path = "/update")
-    public String updateStudent(@RequestBody StudentDTO studentDTO)
-    {
-        String id = studentService.updateStudents(studentDTO);
-        return id;
-    }*/
-
-   /* @PostMapping(value = "/saveStudent")
-    public ResponseEntity saveStudent(@RequestBody StudentDTO studentDTO){
+    @PostMapping(value = "/saveStaff")
+    public ResponseEntity saveStaff(@RequestBody Academic_staffDTO academic_staffDTO){
         try {
-            String res= studentService.addStudent(studentDTO);
+            String res=academic_staffService.saveStaff(academic_staffDTO);
             if (res.equals("00")){
                 responseDTO.setCode(VarList.RSP_SUCCESS);
                 responseDTO.setMessage("Success");
-                responseDTO.setContent(studentDTO);
+                responseDTO.setContent(academic_staffDTO);
                 return new ResponseEntity(responseDTO, HttpStatus.ACCEPTED);
 
             }else if(res.equals("06")) {
                 responseDTO.setCode(VarList.RSP_DUPLICATED);
-                responseDTO.setMessage("Student Registered");
-                responseDTO.setContent(studentDTO);
+                responseDTO.setMessage("Staff Registered");
+                responseDTO.setContent(academic_staffDTO);
                 return new ResponseEntity(responseDTO, HttpStatus.BAD_REQUEST);
             }else {
                 responseDTO.setCode(VarList.RSP_FAIL);
@@ -87,23 +63,23 @@ public class StudentController {
             responseDTO.setContent(null);
             return new ResponseEntity(responseDTO, HttpStatus.INTERNAL_SERVER_ERROR);
 
-        }
+        }*/
 
-    }*/
-   @PutMapping(value = "/updateStudent")
-    public ResponseEntity updateStudent(@RequestBody StudentDTO studentDTO){
+   /* }
+    @PutMapping(value = "/updateStaff")
+    public ResponseEntity updateStaff(@RequestBody Academic_staffDTO academic_staffDTO){
         try {
-            String res= studentService.updateStudents(studentDTO);
+            String res=academic_staffService.updateStaff(academic_staffDTO);
             if (res.equals("00")){
                 responseDTO.setCode(VarList.RSP_SUCCESS);
                 responseDTO.setMessage("Success");
-                responseDTO.setContent(studentDTO);
+                responseDTO.setContent(academic_staffDTO);
                 return new ResponseEntity(responseDTO, HttpStatus.ACCEPTED);
 
             }else if(res.equals("01")) {
                 responseDTO.setCode(VarList.RSP_DUPLICATED);
-                responseDTO.setMessage("Not A Registered Student");
-                responseDTO.setContent(studentDTO);
+                responseDTO.setMessage("Not A Registered Staff");
+                responseDTO.setContent(academic_staffDTO);
                 return new ResponseEntity(responseDTO, HttpStatus.BAD_REQUEST);
             }else {
                 responseDTO.setCode(VarList.RSP_FAIL);
@@ -121,14 +97,14 @@ public class StudentController {
         }
 
     }
-/*
+
     @GetMapping
-    public ResponseEntity getAllStudents(){
+    public ResponseEntity getAllStaff(){
         try {
-            List<StudentDTO> studentDTOList = studentService.getAllStudents();
+            List<Academic_staffDTO> academic_staffDTOList = academic_staffService.getAllStaff();
             responseDTO.setCode(VarList.RSP_SUCCESS);
             responseDTO.setMessage("Success");
-            responseDTO.setContent(studentDTOList);
+            responseDTO.setContent(academic_staffDTOList);
             return new ResponseEntity(responseDTO, HttpStatus.ACCEPTED);
 
         }catch (Exception ex){
@@ -138,19 +114,19 @@ public class StudentController {
             return new ResponseEntity(responseDTO, HttpStatus.INTERNAL_SERVER_ERROR);
 
         }
-    }*/
-    @GetMapping("/searchStudent/{stu_id}")
-    public ResponseEntity searchStudent(@PathVariable long stu_id){
+    }
+    @GetMapping("/searchStaff/{staff_id}")
+    public ResponseEntity searchStaff(@PathVariable long staff_id){
         try {
-            StudentDTO studentDTO = studentService.searchStudent(stu_id);
-            if (studentDTO !=null) {
+            Academic_staffDTO academic_staffDTO = academic_staffService.searchStaff(staff_id);
+            if (academic_staffDTO !=null) {
                 responseDTO.setCode(VarList.RSP_SUCCESS);
                 responseDTO.setMessage("Success");
-                responseDTO.setContent(studentDTO);
+                responseDTO.setContent(academic_staffDTO);
                 return new ResponseEntity(responseDTO, HttpStatus.ACCEPTED);
             } else {
                 responseDTO.setCode(VarList.RSP_NO_DATA_FOUND);
-                responseDTO.setMessage("No Student Available For this studentID");
+                responseDTO.setMessage("No Student Available For this staffID");
                 responseDTO.setContent(null);
                 return new ResponseEntity(responseDTO, HttpStatus.BAD_REQUEST);
             }
@@ -161,10 +137,10 @@ public class StudentController {
             return new ResponseEntity(responseDTO, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-    @DeleteMapping("/deleteStudent/{stu_id}")
-    public ResponseEntity deleteStudent(@PathVariable long stu_id){
+    @DeleteMapping("/deleteStaff/{staff_id}")
+    public ResponseEntity deleteStaff(@PathVariable long staff_id){
         try {
-            String res = studentService.deleteStudent(stu_id);
+            String res = academic_staffService.deleteStaff(staff_id);
             if (res.equals("00")) {
                 responseDTO.setCode(VarList.RSP_SUCCESS);
                 responseDTO.setMessage("Success");
@@ -172,7 +148,7 @@ public class StudentController {
                 return new ResponseEntity(responseDTO, HttpStatus.ACCEPTED);
             } else {
                 responseDTO.setCode(VarList.RSP_NO_DATA_FOUND);
-                responseDTO.setMessage("No Student Available For this studentID");
+                responseDTO.setMessage("No Student Available For this staffID");
                 responseDTO.setContent(null);
                 return new ResponseEntity(responseDTO, HttpStatus.BAD_REQUEST);
             }
@@ -183,4 +159,6 @@ public class StudentController {
             return new ResponseEntity(responseDTO, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
+*/
 }

@@ -1,38 +1,25 @@
-package lk.ac.pdn.sci.exampleInstitute.model;
-
-import jakarta.persistence.*;
+package lk.ac.pdn.sci.exampleInstitute.dto;
 
 import java.util.Date;
-@Entity
-@Table(name = "students")
-public class Student {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+
+public class StudentDTO {
     private long stu_id;
-    @Column(name = "first_name", nullable = false)
     private String firstName;
-    @Column(name = "last_name")
     private String lastName;
-    @Column(name = "dob")
     private Date dateOfBirth;
-    @Column(name = "admissionDate")
     private Date admissionDate;
-    @Column(name = "email",unique = true,nullable = false)
     private String email;
-    @Column(name = "address",nullable = false)
     private String address;
-    @Column(unique = true,nullable = false)
     private String username;
-    @Column(name = "password",unique = true,nullable = false)
     private String password;
-    @Column(name = "mobileNumber")
     private String mobileNumber;
 
-    public Student(){
+    public StudentDTO(){
 
     }
 
-    public Student(long stu_id,String firstName, String lastName, Date dateOfBirth, Date admissionDate, String email, String address, String username, String password, String mobileNumber) {
+
+    public StudentDTO(long stu_id,String firstName, String lastName, Date dateOfBirth, Date admissionDate, String email, String address, String username, String password, String mobileNumber) {
         super();
         this.stu_id = stu_id;
         this.firstName = firstName;
@@ -128,7 +115,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "StudentDTO{" +
                 "stu_id=" + stu_id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
