@@ -19,13 +19,25 @@ function Computing(){
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                        <img src="Images/computing1.jpg" class="d-block w-100 h-5" alt="..."/>
+                        <img src="Images/e4.jpg" class="d-block w-100 h-5" alt="..."/>
+                        <div class="carousel-caption d-none d-md-block">
+                                        <h4 className='text-white'><b>WISDOM</b></h4>
+                                        <a class="btn btn-danger" href="/user-register" role="button">JOIN WITH US</a>
+                        </div>
                         </div>
                         <div class="carousel-item">
-                        <img src="Images/computing2.jpg" class="d-block w-100" alt="..."/>
+                        <img src="Images/e3.jpg" class="d-block w-100" alt="..."/>
+                        <div class="carousel-caption d-none d-md-block">
+                                        <h4 className='text-white'><b>WISDOM</b></h4>
+                                        <a class="btn btn-danger" href="/user-register" role="button">JOIN WITH US</a>
+                        </div>
                         </div>
                         <div class="carousel-item">
-                        <img src="Images/computing3.jpg" class="d-block w-100" alt="..."/>
+                        <img src="Images/science3.jpg" class="d-block w-100" alt="..."/>
+                        <div class="carousel-caption d-none d-md-block">
+                                        <h4 className='text-white'><b>WISDOM</b></h4>
+                                        <a class="btn btn-danger" href="/user-register" role="button">JOIN WITH US</a>
+                        </div>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -45,6 +57,23 @@ function Computing(){
                     We provide critical resources to assist
                      and guide you as you make progress in your academic program and as you prepare to enter the workforce.
                 </p>
+
+                <h1 className='bg-light text-dark fw-bold'><strong>Department Of Information & Tech.</strong></h1>
+                        <p className='bg-dark text-white'><h6 className='ms-4 me-4 pt-3 py-3'>
+                        The information systems discipline focuses on the use and the application of information and communications 
+                        technologies (ICT) in the government, business and the society. Knowledge about information systems 
+                        is now regarded as a core literacy requirement in the modern business environment. In addition, a 
+                        very good understanding of the capabilities, issues and the risks associated with information systems
+                         is demanded as an essential skill for almost all managerial positions in the modern workplace. 
+                         
+                          Succeeding as an innovative manager the understanding of how and where to use information systems, 
+                          communications technology and knowledge management strategies are essential. These skills are not 
+                          negotiable for modern businesses.
+
+                        The Department of Information Technology is committed to prepare students with the applied technology, 
+                        core business and 
+                        communication skills needed to compete in a technology-driven corporate world.<br/></h6></p>
+
             </div>
            
         </div>

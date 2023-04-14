@@ -4,10 +4,10 @@ function StaffDetails2(){
         <div className="container mt-3">
             <div className="row">
                 <div className="col-4">
-                    <img src="/kalpanim-mt.jpg" className="img-thumbnail" alt="..."/>
+                    <img src="/Images/staff7.jpg" className="img-thumbnail" alt="..."/>
                 </div>
                 <div className="col-8">
-                    <h3>Dr. Kalpani Manathunga</h3>
+                    <h3>Dr. Kalpani Silva</h3>
                     <p className="fw-bold">Profile:
                     <p className="fw-normal">Senior Lecturer (Higher Grade) at the Department of Computer Science and Software Engineering, Sri Lanka Institute of Information Technology
                         Graduate Teaching Assistant at the Department of Information and Communication Technologies, Pompeu Fabra University, Spain
@@ -18,7 +18,7 @@ function StaffDetails2(){
                             BSc in Information Technology, Curtin University of Technology, Australia (2007)</p>
                     </p>
                     <p className="fw-bold">Contact:
-                    <p className="fw-normal"><a href='#'>kalpani.m@sliit.lk</a><br/></p>
+                    <p className="fw-normal">+94 11 2572232<br/><a href='#'>kalpani.s@wisdom.lk</a><br/></p>
                     </p>
 
                 </div>

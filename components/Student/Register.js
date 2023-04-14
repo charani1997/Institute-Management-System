@@ -1,31 +1,33 @@
 import {  useState } from "react";
 
 import axios from 'axios';
-import { clear } from "@testing-library/user-event/dist/clear";
 
-function StaffRegister() {
-    const [id, setStaff_id] = useState('');
+function Register() {
     const [fname, setfirstName] = useState("");
     const [lname, setlastName] = useState("");
     const [email, setEmail] = useState("");
-    const [salary, setSalary] = useState("");
+    const [address, setAddress] = useState("");
+    const [dob, setDateOfBirth] = useState("");
+    const [admission, setAdmissionDate] = useState("");
+    const [mobile, setMobileNumber] = useState("");
     const [uname, setUsername] = useState("");
     const [pwd, setPassword] = useState("");
-    const [mobile, setMobileNumber] = useState("");
 
     async function save(event) {
         event.preventDefault();
         try {
-          await axios.post("http://localhost:8080/api/v1/academicStaff/save", {
-            firstName: fname,
-            lastName: lname,
-            email: email,
-            salary : salary,
-            mobileNumber : mobile,
-            username : uname,
-            password : pwd,
+          await axios.post("http://localhost:8080/api/v1/student/save", {
+          firstName: fname,
+          lastName: lname,
+          email: email,
+          address : address,
+          dateOfBirth : dob,
+          admissionDate : admission,
+          mobileNumber : mobile,
+          username : uname,
+          password : pwd,
           });
-          alert("Staff Registation Successfully");
+          alert("Student Registation Successfully");
 
         } catch (err) {
           alert(err);
@@ -38,7 +40,7 @@ function StaffRegister() {
             <div className="row">
                 <div className="col-6 offset-3">
                     <div className="card">
-                        <h5 className="card-header bg-secondary text-white">Staff Register</h5>
+                        <h5 className="card-header bg-secondary text-white">Student Register</h5>
                         <div className="card-body">
     
     			            <form>
@@ -76,12 +78,34 @@ function StaffRegister() {
 
 
                                 <div className="form-group mb-3">
-                                    <label>Salary</label>
-                                    <input type="text" className="form-control" placeholder="Enter Salary" 
-                                    value={salary}
+                                    <label>Address</label>
+                                    <input type="text" className="form-control" id="address" placeholder="Enter Address" 
+                                    value={address}
                                     onChange={(event) =>
                                     {
-                                        setSalary(event.target.value);      
+                                        setAddress(event.target.value);      
+                                    }}
+                                    />
+                                </div>
+
+                                <div className="form-group mb-3">
+                                    <label>Date Of Birth</label>
+                                    <input type="date" className="form-control" id="dob" placeholder="Enter Date of Birth" 
+                                    value={dob}
+                                    onChange={(event) =>
+                                    {
+                                        setDateOfBirth(event.target.value);      
+                                    }}
+                                    />
+                                </div>
+
+                                <div className="form-group mb-3">
+                                    <label>Admission date</label>
+                                    <input type="date" className="form-control" id="admission" placeholder="Enter Admission Date" 
+                                    value={admission}
+                                    onChange={(event) =>
+                                    {
+                                        setAdmissionDate(event.target.value);      
                                     }}
                                     />
                                 </div>
@@ -122,7 +146,7 @@ function StaffRegister() {
 
         			            <button type="submit" className="btn btn-primary mt-4" onClick={save} >Register</button>
                                 <p className="float-end mb-1">
-                                    <a href="/student-register"><button className="btn btn-primary mt-4">Clear</button></a>
+                                    <a href="/staff-register"><button className="btn btn-primary mt-4">Clear</button></a>
                                 </p>
       			            </form>
                         </div>
@@ -135,4 +159,4 @@ function StaffRegister() {
     );
   }
   
-  export default StaffRegister;
+  export default Register;

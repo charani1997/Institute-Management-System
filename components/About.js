@@ -6,17 +6,22 @@ function About(){
     });
     return(
         <div className="bg-secondary text-white">
-            <h2>About US</h2>
-            <p><i>WISDOM EDUCATIONAL CENTER</i></p>
-            <div class="bg-light text-dark">
-                <h3>YOUR JOURNEY BEGINS AT <strong>WISDOM</strong></h3>
-                <p>WISDOM was established in 2012. We are a leading higher educational institute approved by the 
-                    University Grant Commision(UGC). There are 3 faculties and 7 departments. 
+            <h2 className='text-center'>About US</h2>
+            <p className='text-center'><i>WISDOM EDUCATIONAL CENTER</i></p>
+            <div class="bg-light text-dark mt-4">
+                <h3 className='text-center'>YOUR JOURNEY BEGINS AT <strong>WISDOM</strong></h3>
+                <div className="ms-4 me-4 mt-4 my-4"><p><div className="ms-4 me-4 mt-4">WISDOM was established in 2012. We are a leading higher educational institute approved by the 
+                    University Grant Commision(UGC). There are 3 faculties and 8 departments. Faculties are Faculty of Science, Faculty
+                    of Engineering, Faculty of Computing. Departments are Department Of Statistics & Computer Science, Department Of Mathematics,
+                    Department Of Chemistry, Department Of Physics, Department Of Civil Engineering, Department Of Mechanical Engineering,
+                    Department Of Computer Engineering, Department Of Information & Technology.
                     WISDOM Campus provides in demand Education 
                     and Learning to suit young passionate minds that would inspire graduates to make an impact 
                     within work place, industry and society at large with creativity, 
-                    entrepreneurship, self-discipline and competence.<br/>This journey is partnered and guided by a highly
-                    qualified, well experienced panel of academics, experts and practitioners.</p>
+                    entrepreneurship, self-discipline and competence.<br/>WISDOM Educational Center is a leading private Institute in Sri Lanka. 
+                    We are proud to be approved by the Ministry of Higher Education, University Grants
+                     Commission. This journey is partnered and guided by a highly
+                    qualified, well experienced panel of academics, experts and practitioners.</div></p></div>
             </div>
                 <div class="bg-primary text-white">
 	                <div class="about">
@@ -28,12 +33,24 @@ function About(){
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="2000">
                                     <img src="Images/img4.jpg" class="d-block w-100" alt="..."/>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h4 className='text-white'><b>WISDOM</b></h4>
+                                        <a class="btn btn-danger" href="/user-register" role="button">JOIN WITH US</a>
+                                    </div>
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
-                                    <img src="Images/img5.jpg" class="d-block w-100" alt="..."/>
+                                    <img src="Images/img7.jpg" class="d-block w-100" alt="..."/>
+                                    <div class="carousel-caption d-none d-md-block">
+                                    <h4 className='text-white'><b>WISDOM</b></h4>
+                                    <a class="btn btn-danger" href="/user-register" role="button">JOIN WITH US</a>
+                                </div>
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
                                     <img src="Images/img6.jpg" class="d-block w-100" alt="..."/>
+                                    <div class="carousel-caption d-none d-md-block">
+                                    <h4 className='text-white'><b>WISDOM</b></h4>
+                                    <a class="btn btn-danger" href="/user-register" role="button">JOIN WITH US</a>
+                                </div>
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -88,7 +105,7 @@ function About(){
                                         <h2 class="container" itemprop="headline">|Email</h2>
                                     </div>
                                     <div class=" container">
-                                        <p class="about-"><a href="INFO@WISDOM" class="link-light">INFO@WISDOM</a><br/><a href="wisdomedu@gmail.com" class="link-light">wisdomedu@gmail.com</a></p>
+                                        <p class="about-"><a href="INFO@WISDOM" class="link-light">INFO@WISDOM</a><br/><a href="wisdomedu@gmail.com" class="link-light">wisdomedu085@gmail.com</a></p>
                                     </div>
                     
                     
@@ -112,7 +129,7 @@ function About(){
                                         <h2 class="container">Address</h2>
                                     </div>
                                     <div class=" container">
-                                        <p class="about-">21 Wasala Road, <br/>Colombo 04.</p>
+                                        <p class="about-">21 Wasala Road, <br/>Colombo 04, <br/> Sri Lanka.</p>
                                     </div>
                     
                     

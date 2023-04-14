@@ -43,7 +43,7 @@ function Departments() {
                     <div className="card bg-info">
                         <img src="Images/img7.jpg" className="card-img-top" alt="..."/>
                         <div className="card-body">
-                            <h5 className="card-title">Department Of Physics</h5>
+                            <h5 className="card-title">Department Of <br/>Physics</h5>
                             <h3 className='bg-dark link-danger'><Link to='/science'>More Info...</Link></h3>
                         </div>
                     </div>
@@ -51,7 +51,7 @@ function Departments() {
 
                 <div className="col-md-3">
                     <div className="card bg-info">
-                        <img src="Images/img5.jpg" className="card-img-top" alt="..."/>
+                        <img src="Images/engineering2.jpg" className="card-img-top" alt="..."/>
                         <div className="card-body">
                             <h5 className="card-title">Department Of Civil Engineering</h5>
                             <h3 className='bg-dark link-danger'><Link to='/engineering'>More Info...</Link></h3>
@@ -60,7 +60,7 @@ function Departments() {
                 </div>
                 <div className="col-md-3">
                     <div className="card bg-success">
-                        <img src="Images/science1.jpg" className="card-img-top" alt="..."/>
+                        <img src="Images/engineering1.jpg" className="card-img-top" alt="..."/>
                         <div className="card-body">
                             <h5 className="card-title">Department Of Mechanical Engineering</h5>
                             <h3 className='bg-dark link-danger'><Link to='/engineering'>More Info...</Link></h3>
@@ -69,7 +69,7 @@ function Departments() {
                 </div>
                 <div className="col-md-3">
                     <div className="card bg-info">
-                        <img src="Images/img7.jpg" className="card-img-top" alt="..."/>
+                        <img src="Images/engineering4.jpg" className="card-img-top" alt="..."/>
                         <div className="card-body">
                             <h5 className="card-title">Department Of Computer Engineering</h5>
                             <h3 className='bg-dark link-danger'><Link to='/engineering'>More Info...</Link></h3>
@@ -81,9 +81,9 @@ function Departments() {
 
                 <div className="col-md-3">
                     <div className="card bg-primary">
-                        <img src="Images/science3.jpg" className="card-img-top" alt="..."/>
+                        <img src="Images/engineering1.jpeg" className="card-img-top" alt="..."/>
                         <div className="card-body">
-                            <h5 className="card-title">Department Of Information & Technology</h5>
+                            <h5 className="card-title">Department Of Information & Tech.</h5>
                             <h3 className='bg-dark link-danger'><Link to='/computing'>More Info...</Link></h3>
                         </div>
                     </div>

@@ -14,11 +14,11 @@ function Header() {
     </button>
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav ms-auto">
-        <Link className="nav-link active" aria-current="page" to="/"><h5>HOME</h5></Link>
-        <Link className="nav-link" to="/about"><h5>ABOUT US</h5></Link>
+        <Link className="nav-link active" aria-current="page" to="/">HOME</Link>
+        <Link className="nav-link" to="/about">ABOUT US</Link>
         
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle btn-lg" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             FACULTY
           </a>
           <ul className="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
@@ -27,9 +27,9 @@ function Header() {
             <li><Link className="dropdown-item bg-info text-white" to="/science">Science</Link></li>
           </ul>
         </li>
-        <Link className="nav-link" to="/departments"><h5>DEPARTMENTS</h5></Link>
-        <Link className="nav-link" to="/all-courses"><h5>COURSES</h5></Link>
-        <li className="nav-item dropdown">
+        <Link className="nav-link" to="/departments">DEPARTMENTS</Link>
+        <Link className="nav-link" to="/all-courses">COURSES</Link>
+        {/* <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle btn-lg" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             USER
           </a>
@@ -40,9 +40,9 @@ function Header() {
             <li><Link className="dropdown-item bg-info text-white" to="/user-dashboard">Dashboard</Link></li>
             <li><Link className="dropdown-item bg-primary text-white" to="/user-login">Logout</Link></li>
           </ul>
-        </li>
+        </li> */}
 
-        <li className="nav-item dropdown">
+        {/* <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle btn-lg" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             STAFF
           </a>
@@ -53,21 +53,32 @@ function Header() {
             <li><Link className="dropdown-item bg-info text-white" to="/staff-dashboard">Dashboard</Link></li>
             <li><Link className="dropdown-item bg-primary text-white" to="/staff-login">Logout</Link></li>
           </ul>
-        </li>
+        </li> */}
 
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle btn-lg" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             ONLINE SERVICES
           </a>
           {/*************************************************************************************** */}
           <ul className="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
             <li><Link className="dropdown-item bg-info text-white" to="/user-dashboard">Go to Dashboard</Link></li>
-            <li><Link className="dropdown-item bg-primary text-white" to="/user-login">Payments</Link></li>
+            <li><Link className="dropdown-item bg-primary text-white" to="/user-register">Registration</Link></li>
+            {/*<li><Link className="dropdown-item bg-info text-white" to="/signin">Payments</Link></li>*/}
             <li><Link className="dropdown-item bg-info text-white" to="/forum">Online Discussion</Link></li>
             <li><Link className="dropdown-item bg-primary text-white" to="/chat">Group Chat</Link></li>
+            <li><Link className="dropdown-item bg-info text-white" to="/students">Student List</Link></li>
           </ul>
         </li>
+        
+        <Link className="nav-link text-primary" to="/signin"><strong>SIGN IN</strong></Link>
       </div>
+    
+ 
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+
     </div>
   </div>
 </nav>
