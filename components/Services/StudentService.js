@@ -1,28 +1,30 @@
-//import axios from 'axios'
+import axios from 'axios'
 
-//const EMPLOYEE_BASE_REST_API_URL = 'http://localhost:8080/api/v1/students';
+const STUDENT_BASE_REST_API_URL = 'http://localhost:8080/api/v1/student';
 
 class StudentService{
 
-    getAllStudents(){
-        return axios.get(EMPLOYEE_BASE_REST_API_URL)
+    getStudents(){
+        return axios.get(STUDENT_BASE_REST_API_URL);
     }
 
-    // createStudents(student){
-    //     return axios.post(EMPLOYEE_BASE_REST_API_URL, student)
-    // }
 
-    // getStudentById(studentId){
-    //     return axios.get(EMPLOYEE_BASE_REST_API_URL + '/' + studentId);
-    // }
+     createStudent(student){
+        return axios.post(STUDENT_BASE_REST_API_URL,student)
+    } 
 
-    // updateStudent(studentId, student){
-    //     return axios.put(EMPLOYEE_BASE_REST_API_URL + '/' +studentId, student);
-    // }
 
-    // deleteStudent(studentId){
-    //     return axios.delete(EMPLOYEE_BASE_REST_API_URL + '/' + studentId);
-    // }
+     getStudentById(stu_id){
+        return axios.get(STUDENT_BASE_REST_API_URL + '/' + stu_id);
+    }
+
+     updateStudent(stu_id, student){
+        return axios.put(STUDENT_BASE_REST_API_URL+ '/' + stu_id, student);
+     }
+
+     deleteStudent(stu_id){
+         return axios.delete(STUDENT_BASE_REST_API_URL + '/' + stu_id);
+     }
 }
 
 export default new StudentService();

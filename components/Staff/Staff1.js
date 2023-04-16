@@ -9,11 +9,11 @@ function Staff1(){
                 <div className="col-8">
                     <h3>Prof. Jayawardena</h3>
                     <p className="fw-bold">Profile:
-                    <p className="fw-normal">Professor Jayawardena is an Electronic and Telecommunication Engineering graduate from the University of Moratuwa and holds a PhD from the Saga Unversity, Japan. His research areas include Robotics, Intelligent Systems, and Internet of Things. 
+                    <p className="fw-normal text-justify">Professor Jayawardena is an Electronic and Telecommunication Engineering graduate from the University of Moratuwa and holds a PhD from the Saga Unversity, Japan. His research areas include Robotics, Intelligent Systems, and Internet of Things. 
                         He started his career as an engineer and has worked for Sri Lankan Airlines and Sri Lanka Telecom and later moved to the academia. As an academic and a researcher he has worked for Unitec Institute of Technology and University of Auckland, New Zealand. Currently, he is the Dean of the Faculty of Computing at SLIIT.
 
                         Prof. Jayawardena is a Chartered Engineer, a Member of Institution of Engineers Sri Lanka, a Member of Institute of Engineering and Technology, a Senior member of Institute of Electrical and Electronic Engineers, a Chartered Information Technology Professional and a Fellow of the British Computer Society</p></p>
-                    <p className="fw-bold">Academic Qualification: <p className="fw-normal fst-italic">B.Sc. Eng (Hons.) in Electronic and Telecommunication Engineering, University of Moratuwa, Sri Lanka.<br/>
+                    <p className="fw-bold text-justify">Academic Qualification: <p className="fw-normal fst-italic text-justify">B.Sc. Eng (Hons.) in Electronic and Telecommunication Engineering, University of Moratuwa, Sri Lanka.<br/>
                         M.Eng. in Electronic and Telecommunication Engineering, University of Moratuwa, Sri Lanka.<br/>
                         Ph.D. in Robotics and Intelligent Systems, Saga University, Japan.<br/>
                         Chartered Engineer (C.Eng.).<br/>

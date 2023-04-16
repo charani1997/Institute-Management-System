@@ -13,7 +13,7 @@ function StaffDashboard(){
                     <StaffSidebar />
                 </aside>
                 <section className="col-md-9">
-                    Dashboard
+                    Staff Dashboard
                 </section>
             </div>
         </div>

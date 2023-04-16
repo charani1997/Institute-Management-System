@@ -1,23 +1,23 @@
 import {Link} from "react-router-dom";
-import Sidebar from "./Sidebar";
+import AdminSidebar from "./AdminSidebar";
 import {useEffect} from "react";
 
-function Dashboard(){
+function AdminDashboard(){
     useEffect(()=>{
-        document.title='WISDOM | Student-Dashboard'
+        document.title='WISDOM | Admin-Dashboard'
     });
     return(
         <div className="container mt-4">
             <div className="row">
                 <aside className="col-md-3">
-                    <Sidebar />
+                    <AdminSidebar />
                 </aside>
                 <section className="col-md-9">
-                    Student Dashboard
+                    Admin Dashboard
                 </section>
             </div>
         </div>
     )
 }
 
-export default Dashboard;
+export default AdminDashboard;

@@ -9,7 +9,7 @@ function Staff6(){
                 <div className="col-8">
                     <h3>Dr.Isuri Perera</h3>
                     <p className="fw-bold">Profile:
-                    <p className="fw-normal"><strong>Carrier Summary: </strong> 
+                    <p className="fw-normal text-justify"><strong>Carrier Summary: </strong> 
                     04/2014 to date – Senior Lecturer (Higher Grade), Department of Information Technology, Sri Lanka Institute of Information Technology, Sri lanka.<br/>
                     10/2013 to 12/2013 - Visiting Lecturer, University of Colombo School of Computing, Sri Lanka<br/>
                     04/2011 to 12/2011 - Probationary Lecturer (on contract), University of Colombo School of Computing, Sri Lanka<br/>

@@ -21,8 +21,14 @@ import Science from './Faculty/Science';
 import Departments from './Department/Departments';
 
 //User
-import SignIn from './User/SignIn';
+
+import StudentSignIn from './User/StudentSignIn';
+import StaffSignIn from './User/StaffSignIn';
+
+//service
 import Registration from './Services/Registration';
+import SignIn from './Services/SignIn';
+import StudentService from './Services/StudentService';
 
 //Student
 import Login from './Student/Login';
@@ -58,12 +64,13 @@ import Staff11 from './Staff/Staff11';
 import Staff12 from './Staff/Staff12';
 
 //Chat
-import Groupchat from './Chat/Groupchat';
-import Forum from './Chat/Forum';
-import Add from './Chat/Add';
-import Edit from './Chat/Edit';
-import Navbar from './Chat/Navbar';
 import ChatRoom from './Chat/ChatRoom';
+
+//Google sheet
+import NavbarSheet from './GoogleSheet/NavbarSheet';
+//import HomeSheet from './GoogleSheet/Pages/HomeSheet';
+//import AddSheet from './GoogleSheet/Pages/AddSheet';
+//import EditSheet from './GoogleSheet/Pages/EditSheet';
 
 //Students
 // import Students from './Student/Students';
@@ -72,10 +79,28 @@ import ChatRoom from './Chat/ChatRoom';
 //import ListStudentComponent from './Student/ListStudentComponent';
 //import StudentService from './Services/StudentService';
 
-import StudentList from './Student/StudentList';
+//import StudentList from './Student/StudentList';
 
+//Admin
+import AdminSidebar from './Admin/AdminSidebar';
+import AdminDashboard from './Admin/AdminDashboard';
+import AdminSignin from './Admin/AdminSignin';
+
+import ListStudent from '../StudentList/ListStudent';
+import StudentHeader from '../StudentList/StudentHeader';
+import StudentFooter from '../StudentList/StudentFooter';
+import CreateStudent from '../StudentList/CreateStudent';
+
+import StaffHeader from './StaffList/StaffHeader';
+import ListStaff from './StaffList/ListStaff';
+import CreateStaff from './StaffList/CreateStaff';
+
+
+
+
+//-----------------------------------------------------------------------------------------
 import {Routes as Switch,Route} from 'react-router-dom';
-
+import StaffService from './Services/StaffService';
 
 function Main() {
   return (
@@ -137,19 +162,43 @@ function Main() {
             <Route path='/students' element={<StudentService />} />*/}
             
             
-            <Route path='/students' element={<StudentList />} />
-
-            
-            {/*<Route path='/chat' element={<Groupchat />} />*/}
            
          
-            <Route exact path="/forum" component={Forum} />
+            {/*<Route exact path="/forum" component={Forum} />
             <Route exact path="/add" component={Add} />
             <Route exact path="/edit" component={Edit} />
-            <Route exact path="/bar" component={Navbar} />
+          <Route exact path="/bar" component={Navbar} />*/}
 
+            <Route path='/studentsignin' element={<StudentSignIn />} />
+            <Route path='/staffsignin' element={<StaffSignIn />} />
             <Route path='/signin' element={<SignIn />} />
             <Route path='/chat' element={<ChatRoom />} />
+
+            <Route path='/sheet' element={<NavbarSheet />} />
+            {/*<Route path='/homesheet' element={<HomeSheet />} />
+            <Route path='/addsheet' element={<AddSheet />} />
+          <Route path='/editsheet' element={<EditSheet />} />*/}
+
+
+            <Route path='/admindashboard' element={<AdminDashboard />} />
+            <Route path='/adminsidebar' element={<AdminSidebar />} />
+            <Route path='/adminsignin' element={<AdminSignin />} />
+
+            <Route path='/studentheader' element={<StudentHeader />} />
+            <Route path='/liststudent' element={<ListStudent />} />
+            <Route path='/studentfooter' element={<StudentFooter />} />
+            <Route path='/addstudent' element={<CreateStudent />} />
+            <Route path='/editstudent/:id' element={<CreateStudent />} />
+            <Route path='/studentservice' element={<StudentService />} />
+                            
+          
+            <Route path='/staffheader' element={<StaffHeader />} />
+            <Route path='/liststaff' element={<ListStaff />} />
+            <Route path='/addstaff' element={<CreateStaff />} />
+            <Route path='/editstaff/:id' element={<CreateStaff />} />
+            <Route path='/staffservice' element={<StaffService />} />
+        
+    
 
         </Switch>
         <Footer />

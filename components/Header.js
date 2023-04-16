@@ -28,7 +28,7 @@ function Header() {
           </ul>
         </li>
         <Link className="nav-link" to="/departments">DEPARTMENTS</Link>
-        <Link className="nav-link" to="/all-courses">COURSES</Link>
+        
         {/* <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle btn-lg" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             USER
@@ -61,15 +61,16 @@ function Header() {
           </a>
           {/*************************************************************************************** */}
           <ul className="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
-            <li><Link className="dropdown-item bg-info text-white" to="/user-dashboard">Go to Dashboard</Link></li>
-            <li><Link className="dropdown-item bg-primary text-white" to="/user-register">Registration</Link></li>
-            {/*<li><Link className="dropdown-item bg-info text-white" to="/signin">Payments</Link></li>*/}
-            <li><Link className="dropdown-item bg-info text-white" to="/forum">Online Discussion</Link></li>
-            <li><Link className="dropdown-item bg-primary text-white" to="/chat">Group Chat</Link></li>
-            <li><Link className="dropdown-item bg-info text-white" to="/students">Student List</Link></li>
+            <li><Link className="dropdown-item bg-info text-white" to="/signin">Go to Dashboard</Link></li>
+            {/*<li><Link className="dropdown-item bg-primary text-white" to="/user-register">Registration</Link></li>*/}
+            <li><Link className="dropdown-item bg-primary text-white" to="/signin">Payments</Link></li>
+            <li><Link className="dropdown-item bg-info text-white" to="/sheet">Online Discussion</Link></li>
+            {/*<li><Link className="dropdown-item bg-primary text-white" to="/chat">Group Chat</Link></li>*/}
+            {/*<li><Link className="dropdown-item bg-info text-white" to="/students">Student List</Link></li>
+            <li><Link className="dropdown-item bg-primary text-white" to="/all-courses">Courses</Link></li>*/}
           </ul>
         </li>
-        
+        <Link className="nav-link text-danger" to="/user-register">SIGN UP</Link>
         <Link className="nav-link text-primary" to="/signin"><strong>SIGN IN</strong></Link>
       </div>
     

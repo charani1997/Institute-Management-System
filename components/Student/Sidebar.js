@@ -9,8 +9,11 @@ function Sidebar(){
                 <Link to="/user-grades" className="list-group list-group-item-action list-group-item-info fs-2">Grades</Link>
                 <Link to="/course-register" className="list-group list-group-item-action list-group-item-warning fs-2">Course Registration</Link>
                 <Link to="/user-profile" className="list-group list-group-item-action list-group-item-light fs-2">Profile</Link>
-                <Link to="/ChangePassword" className="list-group list-group-item-action list-group-item-dark fs-2">Change Password</Link>
-                <Link to="/user-login" className="list-group list-group-item-action text-danger list-group-item-danger fs-2">Logout</Link>
+                {/*<Link to="/ChangePassword" className="list-group list-group-item-action list-group-item-dark fs-2">Change Password</Link>*/}
+                <Link to="/Chat" className="list-group list-group-item-action list-group-item-dark fs-2">Group Chat</Link>
+                <Link to="/liststudent" className="list-group list-group-item-action text-primary list-group-item-dark fs-2">Student List</Link>
+                <Link to="/all-courses" className="list-group list-group-item-action text-dark list-group-item-success fs-2">Courses</Link>
+                <Link to="/signin" className="list-group list-group-item-action text-danger list-group-item-danger fs-2">Logout</Link>
             </div>
         </div>
     )

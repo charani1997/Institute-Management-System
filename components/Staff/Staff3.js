@@ -9,7 +9,7 @@ function Staff3(){
                 <div className="col-8">
                     <h3>Dr. Sumudu</h3>
                     <p className="fw-bold">Profile:
-                    <p className="fw-normal">
+                    <p className="fw-normal text-justify">
                         Highest qualification
 
                         <li>PhD in Computer Science, Management and Science University, Malaysia (2016)</li>

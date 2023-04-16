@@ -9,7 +9,7 @@ function Staff11(){
                 <div className="col-8">
                     <h3>Dr. Ruwani Warsha</h3>
                     <p className="fw-bold">Profile:
-                    <p className="fw-normal"><strong>Carrier Summary: </strong> 
+                    <p className="fw-normal text-justify"><strong>Carrier Summary: </strong> 
                     Dr. Ruwani Warsha is serving as an Associate Professor attached to the Department of Mechanical 
                     Engineering at the wisdom. His area of expertise
                      is Mechatronics. He is working on developing high speed industrial automation systems for product 

@@ -9,7 +9,7 @@ function Staff4(){
                 <div className="col-8">
                     <h3>Dr. P Dissanayake</h3>
                     <p className="fw-bold">Profile:
-                    <p className="fw-normal"><strong>Carrier Summary:</strong> Renowned academic and researcher in Plant
+                    <p className="fw-normal text-justify"><strong>Carrier Summary:</strong> Renowned academic and researcher in Plant
                      Biotechnology. After graduating from faculty of Agriculture, University of Peradeniya, Sri Lanka, I 
                      completed the M.Sc Degree in Pennsylvania State University, USA, and Ph.D. in University of London, 
                      UK. I started my career at Faculty of Agriculture University of Peradeniya, Sri Lanka as a Lecturer 

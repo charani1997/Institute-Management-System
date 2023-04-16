@@ -53,16 +53,16 @@ function Science(){
     
                          <div>
                          
-                         <h1 className='bg-light text-dark fw-bold'><strong>WELCOME TO FACULTY OF SCIENCE</strong></h1>
-                         <p className='bg-dark text-white'>WISDOM is committed to your success. We provide critical resources to assist and guide you as you make progress in your
+                         <h1 className='bg-light text-dark fw-bold text-justify'><strong>WELCOME TO FACULTY OF SCIENCE</strong></h1>
+                         <p className='bg-dark text-white text-justify'>WISDOM is committed to your success. We provide critical resources to assist and guide you as you make progress in your
                               academic program and as you prepare to enter the workforce.</p>
 
 
-                        <h1 className='bg-light text-dark fw-bold'><strong>Department Of Statistics & Computer Science</strong></h1>
-                        <p className='bg-dark text-white'><h6 className='ms-4 me-4 pt-3 py-3'>Degree Aims:<br/>
+                        <h1 className='bg-light text-dark fw-bold text-justify'><strong>Department Of Statistics & Computer Science</strong></h1>
+                        <p className='bg-dark text-white text-justify'><h6 className='ms-4 me-4 pt-3 py-3 text-justify'>Degree Aims:<br/>
                             <li>Provide students with in-depth knowledge in statistics with a special focus on computer science and its applications.</li><br/>
                             <li>The programme produces graduates for academia as well as for the information technology related industries.</li><br/></h6></p>
-                            <p className='bg-dark text-white'><h6 className='ms-4 me-4 pt-3 py-3'>The BSc (Hons) in Computer Science degree programme produces high-quality graduates with strong analytical and quantitative skills with a
+                            <p className='bg-dark text-white text-justify'><h6 className='ms-4 me-4 pt-3 py-3 text-justify'>The BSc (Hons) in Computer Science degree programme produces high-quality graduates with strong analytical and quantitative skills with a
                              comprehensive knowledge in Mathematics, Programming, Software Engineering, System Modelling, and Research. 
                              The graduates must be versatile in the knowledge drawn from the key knowledge areas of Computer Science,
                               including Algorithms Design and Implementation, Intelligent Systems, Parallel Computing, and Computational Science.
@@ -75,15 +75,15 @@ function Science(){
                               Apart from these, the department also offers courses for the Applied Sciences Degree program.
                             <br/></h6></p>
 
-                        <h1 className='bg-light text-dark fw-bold'><strong>Department Of Mathematics</strong></h1>
-                        <p className='bg-dark text-white'><h6 className='ms-4 me-4 pt-3 py-3'>The department conducts five undergraduate programs 
+                        <h1 className='bg-light text-dark fw-bold text-justify'><strong>Department Of Mathematics</strong></h1>
+                        <p className='bg-dark text-white v'><h6 className='ms-4 me-4 pt-3 py-3 text-justify'>The department conducts five undergraduate programs 
                         that lead to the BSc Honours degrees (BSc in Mathematics, BSc in Applied Mathematics, BSc in Computational Mathematics
                         , BSc in Mathematical Finance, BSc in Finance and Insurance), two postgraduate programs that lead to the 
                         MSc degrees (MSc in Financial Mathematics, MSc in Mathematics Education) and one external program that lead to 
                         the BSc in Financial Engineering.<br/></h6></p>
 
-                        <h1 className='bg-light text-dark fw-bold'><strong>Department Of Chemistry</strong></h1>
-                        <p className='bg-dark text-white'><h6 className='ms-4 me-4 pt-3 py-3'>The vision of the Department is to 
+                        <h1 className='bg-light text-dark fw-bold text-justify'><strong>Department Of Chemistry</strong></h1>
+                        <p className='bg-dark text-white text-justify'><h6 className='ms-4 me-4 pt-3 py-3 text-justify'>The vision of the Department is to 
                         produce graduates with a sound knowledge in Chemistry having international recognition and the ability to fulfill 
                         chemistry based current needs of the country. Our academic programmes provide high quality B.Sc. General and Special 
                         Degrees and challenging learning opportunities in fundamental, advance, practical and applied Chemistry. Research
@@ -103,8 +103,8 @@ function Science(){
                             <li>Provide qualified graduates in gaining admission to and completing graduate programme in chemistry and related field.</li>
                             <li>Provide qualified graduates for national benefits.</li> <br/></h6></p>
 
-                        <h1 className='bg-light text-dark fw-bold'><strong>Department Of Physics</strong></h1>
-                        <p className='bg-dark text-white'><h6 className='ms-4 me-4 pt-3 py-3'>Physics is at the core of our intellectual 
+                        <h1 className='bg-light text-dark fw-bold text-justify'><strong>Department Of Physics</strong></h1>
+                        <p className='bg-dark text-white text-justify'><h6 className='ms-4 me-4 pt-3 py-3 text-justify'>Physics is at the core of our intellectual 
                         understanding of natural phenomena and the foundation of many scientific disciplines, and contributes immensely
                          to scientific and technological advances. Moreover, physics is both a theoretical and practical discipline which 
                          continually evolves with profound scientific questioning; 

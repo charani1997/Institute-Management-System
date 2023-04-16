@@ -61,8 +61,8 @@ function Home() {
                 <div className="col-sm-9">
                     <div className="card  bg-secondary my-2 me-2">
                     <div className="card-body">
-                        <h5 className="card-title text-center bg-dark"><strong>YOUR JOURNEY BEGINS AT WISDOM</strong></h5>
-                        <p className="card-text">WISDOM Educational Center is a leading private Institute in Sri Lanka. We are proud to be approved by the Ministry of Higher Education, University Grants Commission
+                        <h5 className="card-title text-center bg-dark text-justify"><strong>YOUR JOURNEY BEGINS AT WISDOM</strong></h5>
+                        <p className="card-text text-justify">WISDOM Educational Center is a leading private Institute in Sri Lanka. We are proud to be approved by the Ministry of Higher Education, University Grants Commission
 
                             Every year, more than 1200 students get enrolled in the academic programmes.
                             <br/><br/>
@@ -72,8 +72,8 @@ function Home() {
                                 <div class="col-sm-6">
                                     <div class="card">
                                     <div class="card-body bg-dark">
-                                        <h5 class="card-title bg-dark text-center"><strong>Our Mission</strong></h5>
-                                        <p className='bg-dark'>To provide students with life changing opportunities through intellectual transformation, 
+                                        <h5 class="card-title bg-dark text-center text-justify"><strong>Our Mission</strong></h5>
+                                        <p className='bg-dark text-justify'>To provide students with life changing opportunities through intellectual transformation, 
                                             and use knowledge, skills and attitudes they develop to best serve the world upholding the
                                             values they cherished.</p>
                                     </div>
@@ -82,8 +82,8 @@ function Home() {
                                 <div class="col-sm-6">
                                     <div class="card">
                                     <div class="card-body bg-dark">
-                                        <h5 class="card-title text-center"><strong>Our Vision</strong></h5>
-                                        <p className='bg-dark'> To be the leading international higher education provider in the country and in
+                                        <h5 class="card-title text-center text-justify"><strong>Our Vision</strong></h5>
+                                        <p className='bg-dark text-justify'> To be the leading international higher education provider in the country and in
                                             the region inspiring excellence and innovation.<br/><br/></p>
                                     </div>
                                     </div>

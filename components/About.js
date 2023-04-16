@@ -10,7 +10,7 @@ function About(){
             <p className='text-center'><i>WISDOM EDUCATIONAL CENTER</i></p>
             <div class="bg-light text-dark mt-4">
                 <h3 className='text-center'>YOUR JOURNEY BEGINS AT <strong>WISDOM</strong></h3>
-                <div className="ms-4 me-4 mt-4 my-4"><p><div className="ms-4 me-4 mt-4">WISDOM was established in 2012. We are a leading higher educational institute approved by the 
+                <div className="ms-4 me-4 mt-4 my-4"><p><div className="ms-4 me-4 mt-4 text-justify">WISDOM was established in 2012. We are a leading higher educational institute approved by the 
                     University Grant Commision(UGC). There are 3 faculties and 8 departments. Faculties are Faculty of Science, Faculty
                     of Engineering, Faculty of Computing. Departments are Department Of Statistics & Computer Science, Department Of Mathematics,
                     Department Of Chemistry, Department Of Physics, Department Of Civil Engineering, Department Of Mechanical Engineering,

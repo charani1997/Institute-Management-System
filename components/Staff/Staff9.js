@@ -9,7 +9,7 @@ function Staff9(){
                 <div className="col-8">
                     <h3>Dr. Piyumi Shenali</h3>
                     <p className="fw-bold">Profile:
-                    <p className="fw-normal"><strong>Carrier Summary: </strong> 
+                    <p className="fw-normal text-justify"><strong>Carrier Summary: </strong> 
                     Dr. Piyumi Shenali is serving as an Associate Professor attached to the Department of Mechanical 
                     Engineering at the wisdom. His area of expertise
                      is Mechatronics. He is working on developing high speed industrial automation systems for product 

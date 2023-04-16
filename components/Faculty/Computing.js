@@ -50,16 +50,16 @@ function Computing(){
                     </button>
                     </div>
                     <div>
-                <h1 className='bg-light text-dark fw-bold'><strong>WELCOME TO FACULTY OF COMPUTING</strong></h1>
-                <p className='bg-dark text-white'> The WISDOM, Faculty of Computing is equipped with a range of courses specialising in various arms of 
+                <h1 className='bg-light text-dark fw-bold text-justify'><strong>WELCOME TO FACULTY OF COMPUTING</strong></h1>
+                <p className='bg-dark text-white text-justify'> The WISDOM, Faculty of Computing is equipped with a range of courses specialising in various arms of 
                     the IT sector. Students are able to choose a path that is most in line with their requirements, 
                     allowing them to pursue substantial careers in their selected field. CINEC is committed to your success. 
                     We provide critical resources to assist
                      and guide you as you make progress in your academic program and as you prepare to enter the workforce.
                 </p>
 
-                <h1 className='bg-light text-dark fw-bold'><strong>Department Of Information & Tech.</strong></h1>
-                        <p className='bg-dark text-white'><h6 className='ms-4 me-4 pt-3 py-3'>
+                <h1 className='bg-light text-dark fw-bold text-justify'><strong>Department Of Information & Tech.</strong></h1>
+                        <p className='bg-dark text-white text-justify'><h6 className='ms-4 me-4 pt-3 py-3 text-justify'>
                         The information systems discipline focuses on the use and the application of information and communications 
                         technologies (ICT) in the government, business and the society. Knowledge about information systems 
                         is now regarded as a core literacy requirement in the modern business environment. In addition, a 
