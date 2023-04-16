@@ -19,11 +19,11 @@ public class Student {
     private Date admissionDate;
     @Column(name = "email",unique = true,nullable = false)
     private String email;
-    @Column(name = "address",nullable = false)
+    @Column(name = "address")
     private String address;
-    @Column(unique = true,nullable = false)
+    @Column(unique = true)
     private String username;
-    @Column(name = "password",unique = true,nullable = false)
+    @Column(name = "password",unique = true)
     private String password;
     @Column(name = "mobileNumber")
     private String mobileNumber;

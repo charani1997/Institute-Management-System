@@ -33,7 +33,7 @@ public class AppSecurityConfig{
         return http
                 .csrf().disable()
                 .authorizeHttpRequests()
-                .requestMatchers("/api/v2/open/**","/user/**","/authenticate","/api/v1/student/save").permitAll()
+                .requestMatchers("/api/v2/open/**","/user/**","/authenticate","/api/v1/student/**","/api/v1/academicStaff/**","/ws/**","/api/v1/admin/**").permitAll()
                 .and()
                 .authorizeHttpRequests().requestMatchers("/api/v3/**").authenticated()
                 .and()

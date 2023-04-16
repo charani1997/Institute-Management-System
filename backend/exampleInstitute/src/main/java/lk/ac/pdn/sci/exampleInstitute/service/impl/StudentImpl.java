@@ -2,6 +2,7 @@ package lk.ac.pdn.sci.exampleInstitute.service.impl;
 
 import lk.ac.pdn.sci.exampleInstitute.dto.LoginDTO;
 import lk.ac.pdn.sci.exampleInstitute.dto.StudentDTO;
+import lk.ac.pdn.sci.exampleInstitute.dto.StudentListDTO;
 import lk.ac.pdn.sci.exampleInstitute.model.Student;
 import lk.ac.pdn.sci.exampleInstitute.repository.StudentRepository;
 import lk.ac.pdn.sci.exampleInstitute.response.LoginResponse;
@@ -146,6 +147,47 @@ public class StudentImpl implements StudentService {
             return modelMapper.map(student,StudentDTO.class);
         }else {
             return null;
+        }
+    }
+//1)
+    @Override
+    public List<StudentListDTO> getListStudent() {
+        List<Student> getListStudents = studentRepository.findAll();
+        List<StudentListDTO> studentList = new ArrayList<>();
+        for(Student a:getListStudents)
+        {
+            StudentListDTO studentListDTO = new StudentListDTO(
+
+                    a.getStu_id(),
+                    a.getFirstName(),
+                    a.getLastName(),
+                    a.getEmail()
+            );
+            studentList.add(studentListDTO);
+        }
+
+        return  studentList;
+
+    }
+//2)
+    @Override
+    public StudentListDTO getStudentById(long stuId) {
+        if (studentRepository.existsById(stuId)){
+            Student student1 =studentRepository.findById(stuId).orElse(null);
+            return modelMapper.map(student1,StudentListDTO.class);
+        }else {
+            return null;
+        }
+    }
+//3)
+    @Override
+    public String update(StudentListDTO studentListDTO) {
+        if (studentRepository.existsById(studentListDTO.getStu_id())){
+            studentRepository.save(modelMapper.map(studentListDTO, Student.class));
+            return VarList.RSP_SUCCESS;
+
+        }else {
+            return VarList.RSP_NO_DATA_FOUND;
         }
     }
 }

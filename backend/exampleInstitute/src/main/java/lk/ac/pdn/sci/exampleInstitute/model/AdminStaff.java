@@ -3,42 +3,29 @@ package lk.ac.pdn.sci.exampleInstitute.model;
 import jakarta.persistence.*;
 
 @Entity
-public class User {
+@Table(name = "adminStaff")
+public class AdminStaff {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-    private String name;
+    private long admin_id;
     private String email;
     private String password;
-    private String role;
 
-
-    public User() {
+    public AdminStaff() {
     }
 
-    public User( String name, String email, String password, String role) {
-        this.name = name;
+    public AdminStaff(long admin_id,String email, String password) {
+        this.admin_id = admin_id;
         this.email = email;
         this.password = password;
-        this.role = role;
     }
 
-
-
-    public long getId() {
-        return id;
+    public long getAdmin_id() {
+        return admin_id;
     }
 
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public void setAdmin_id(long admin_id) {
+        this.admin_id = admin_id;
     }
 
     public String getEmail() {
@@ -57,13 +44,12 @@ public class User {
         this.password = password;
     }
 
-    public String getRole() {
-        return role;
+    @Override
+    public String toString() {
+        return "Admin_staff{" +
+                "admin_id=" + admin_id +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
-
-
 }

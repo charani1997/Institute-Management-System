@@ -15,11 +15,11 @@ public class Academic_staff {
     @Column(name = "salary",nullable = false)
     private double salary;
     //private String staff_role;
-    @Column(unique = true,nullable = false)
+    @Column(unique = true)
     private String username;
-    @Column(name = "password",unique = true,nullable = false)
+    @Column(name = "password",unique = true)
     private String password;
-    @Column(name = "email",unique = true,nullable = false)
+    @Column(name = "email",unique = true)
     private String email;
     @Column(name = "mobileNumber")
     private String mobileNumber;

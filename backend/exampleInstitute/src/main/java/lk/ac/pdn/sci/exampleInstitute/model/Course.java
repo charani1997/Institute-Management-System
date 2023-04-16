@@ -14,6 +14,15 @@ public class Course {
     private int credits;
     private long d_id;
 
+    public Course() {
+    }
+
+    public Course(String course_code, String course_title, int credits) {
+        this.course_code = course_code;
+        this.course_title = course_title;
+        this.credits = credits;
+    }
+
     public String getCourse_code() {
         return course_code;
     }

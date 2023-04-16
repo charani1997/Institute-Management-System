@@ -2,6 +2,7 @@ package lk.ac.pdn.sci.exampleInstitute.service;
 
 import lk.ac.pdn.sci.exampleInstitute.dto.LoginDTO;
 import lk.ac.pdn.sci.exampleInstitute.dto.StudentDTO;
+import lk.ac.pdn.sci.exampleInstitute.dto.StudentListDTO;
 import lk.ac.pdn.sci.exampleInstitute.response.LoginResponse;
 
 import java.util.List;
@@ -19,4 +20,10 @@ public interface StudentService {
     String deleteStudent(long stuId);
 
     StudentDTO searchStudent(long stuId);
+
+    List<StudentListDTO> getListStudent();
+
+    StudentListDTO getStudentById(long stuId);
+
+    String update(StudentListDTO studentListDTO);
 }
