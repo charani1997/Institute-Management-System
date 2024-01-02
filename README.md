@@ -1,3 +1,16 @@
+##Institute Management System
+
+This document contains information about the Institution Management System. This project deals with the various functioning in Institute management system process. Under this project, I am planning consider each Students take different types of subjects and register courses using system. Correspondent maintains paper-based record of every Students and handles the operations manually. Correspondent wants a management system for managing each Student details and their records. Because of that, I decided to create this Institution management system. Institute has many kinds of processes. In here, the administrator has the authority to use this system. This allows authorized members to access the record of academically registered students. Allow students to register online.
+
+Student can access to this system over the internet. Admin can creation of new record, deletion of records, updating in record, display of data in record and searching records. Using this system admin can add new student details, Exam Progress, not only see all function of the records but also individual report also. According to the Subjects Chosen, exam’s marks grade also calculates their marks obtained. Web-based application system reduces effort to maintain data in effective manner. Teacher can easily view student details. Student can see gets information when they need by simply accessing the site. Data management system is much easier in this way as because there is no way to loss of data. The system facilitates handling the admission process, maintaining, and reporting of student and teachers’ data, maintaining records. It also allows to view class schedules online, viewing report of student (marks, grades, and academic progression). The institute management also can communicate with student and parents.
+
+This Web based Institute Management System can help to solving the problems in existing manual system. This system helps to minimize wasting time, effort resources and frauds, lack of communication and make the system secure. This system is very easy to operate and maintain information about Institute, Students, Teachers(instructors), Courses, etc.
+
+This system has two types of users, one is the administrator and the other one is the users (Teachers, Students). The admin can manage all data and has access to all features and functionalities of the system. The users can access the system through own account. Students can visit the web page and register online. The aim of my project is develop a quality standalone management system for resolving problems in the current paper base system and to make a proper combination between class staff/instructors and students using information technology.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
