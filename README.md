@@ -1,4 +1,4 @@
-##Institute Management System
+# Institute Management System
 
 This document contains information about the Institution Management System. This project deals with the various functioning in Institute management system process. Under this project, I am planning consider each Students take different types of subjects and register courses using system. Correspondent maintains paper-based record of every Students and handles the operations manually. Correspondent wants a management system for managing each Student details and their records. Because of that, I decided to create this Institution management system. Institute has many kinds of processes. In here, the administrator has the authority to use this system. This allows authorized members to access the record of academically registered students. Allow students to register online.
 
